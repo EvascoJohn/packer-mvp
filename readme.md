@@ -35,3 +35,22 @@ uvicorn main:app --reload
 This command will start the development server and reload it automatically whenever changes are made to the code.
 
 You can now access the FastAPI app by navigating to `http://localhost:8000` in your web browser.
+
+
+# API Endpoints
+
+Welcome to our API! Below are the available endpoints:
+
+## Documentation for Endpoints
+
+For detailed documentation and usage examples, please visit `http://localhost:8000/docs`
+
+## Endpoints
+
+1. `/bags`
+   - Method: GET
+   - Description: Retrieves a list of all bags.
+
+2. `/create_bags`
+   - Method: POST
+   - Description: Creates a new bag.
