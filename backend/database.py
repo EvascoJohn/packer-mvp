@@ -1,19 +1,20 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from dotenv import load_dotenv
+from env_loader import config
+import pymysql
 
+print(config)
 
-database = ""
-dialet = ""
-username = ""
-password = ""
-port = ""
-url = ""
-db_name = ""
+database = config['DATABASE']
+dialet = config['DIALECT']
+username = config['DB_USERNAME']
+password = config['DB_PASSWORD']
+port = config['DB_PORT']
+address = config['DB_ADDRESS']
+db_name = config['DB_NAME']
 
-engine = create_engine('mysql+pymysql://root:cAsCadE_ace_casad2002@localhost:3306/packerprototype', echo=True)
+engine = create_engine(f'{database}+{dialet}://{username}:{password}@{address}:{port}/{db_name}', echo=True)
 
 Session = sessionmaker(bind=engine)
-
-
 session = Session()
+

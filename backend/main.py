@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from dataclasses import dataclass
-from api import session
+from database import session
 from fastapi.encoders import jsonable_encoder
 
 
