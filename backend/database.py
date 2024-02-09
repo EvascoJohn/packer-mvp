@@ -3,7 +3,6 @@ from sqlalchemy.orm import sessionmaker
 from env_loader import config
 import pymysql
 
-print(config)
 
 database = config['DATABASE']
 dialet = config['DIALECT']
@@ -14,6 +13,7 @@ address = config['DB_ADDRESS']
 db_name = config['DB_NAME']
 
 engine = create_engine(f'{database}+{dialet}://{username}:{password}@{address}:{port}/{db_name}', echo=True)
+
 
 Session = sessionmaker(bind=engine)
 session = Session()

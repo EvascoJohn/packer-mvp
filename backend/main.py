@@ -6,7 +6,10 @@ from fastapi.encoders import jsonable_encoder
 
 import model_data
 import models
+from database import engine
 
+
+models.Base.metadata.create_all(engine)
 
 app = FastAPI()
 
