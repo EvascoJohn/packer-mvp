@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.15.9",
     "vue": "^3.4.15"
   },
   "devDependencies": {
