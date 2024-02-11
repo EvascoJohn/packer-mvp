@@ -54,3 +54,20 @@ For detailed documentation and usage examples, please visit `http://localhost:80
 2. `/create_bags`
    - Method: POST
    - Description: Creates a new bag.
+
+
+##### FRONTEND #####
+
+## To setup:
+
+   1. Change directory to "frontend" folder
+      
+         'cd frontend'
+   
+   2. Install dependency ( Make sure NodeJS is installed )
+      
+         'npm install'
+
+   3. To run.
+
+         'npm run dev'      
